@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoj G K - Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #0f2027;
+      color: #e6f1ff;
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; }
+
+    header {
+      background: rgba(26,26,46,0.9);
+      padding: 20px 5%;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    header h1 { color: #00adb5; margin: 0; }
+
+    nav a {
+      color: #eee;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover { color: #00adb5; }
+
+    section {
+      padding: 00px 5%;
+      min-height: 100vh;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 50px;
+      color: #00adb5;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: #00adb5;
+      display: block;
+      margin: 10px auto 0;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .project-card {
+      background: rgba(17,34,64,0.7);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .project-card:hover { transform: translateY(-10px); }
+
+    .project-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-content h3 { color: #00adb5; margin-bottom: 15px; }
+
+    .project-content p { color: #8892b0; margin-bottom: 15px; font-size: 0.95rem; }
+
+    .project-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .project-link {
+      color: #00adb5;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.9rem;
+    }
+
+    .project-link:hover { color: #eee; }
+
+    .more-projects {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .more-projects a {
+      display: inline-block;
+      padding: 12px 35px;
+      border: 2px solid #00adb5;
+      border-radius: 5px;
+      color: #00adb5;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .more-projects a:hover {
+      background: #00adb5;
+      color: #fff;
+    }
+
+    @media(max-width:768px) {
+      .project-grid { grid-template-columns: 1fr; }
+    }
+    .project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
+  gap: 30px;
+  margin-top: 30px;
+}
+@media(max-width:1024px) {
+  .project-grid { grid-template-columns: repeat(2, 1fr); } /* 2 columns on medium screens */
+}
+
+@media(max-width:768px) {
+  .project-grid { grid-template-columns: 1fr; } /* 1 column on mobile */
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 per row */
+  gap: 30px;
+  margin-top: 30px;
+}
+
+@media(max-width:1024px) {
+  .project-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media(max-width:768px) {
+  .project-grid { grid-template-columns: 1fr; }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-grid">
+      
+      <div class="project-card">
+        <img src="../assenst/Screenshot 2025-06-12 204443.png" alt="E-Waste Recycling App" class="project-img">
+        <div class="project-content">
+          <h3>E-Waste Recycling App</h3>
+          <p>A comprehensive platform to manage and promote e-waste recycling with location tracking, user dashboard, and reward system. Built with Flask, MySQL, and integrated Google Maps API.</p>
+          <div class="project-links">
+            <a href="https://manojgk.shop/" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/ManojGK-2002/manojgk-shop" class="project-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="../assenst/ChatGPT Image Sep 5, 2025, 09_48_50 PM.png" alt="AWS VPC Tutorial" class="project-img">
+        <div class="project-content">
+          <h3>AWS VPC Tutorial | Public & Private Subnets, ALB, NAT, Auto Scaling</h3>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="../assenst/Three-Tier.gif" alt="User Auth System" class="project-img">
+        <div class="project-content">
+          <h3>User Authentication System</h3>
+          <p>A complete authentication system with registration, login, OTP verification, and password reset functionality. Implemented with Flask, JWT, and MySQL with security best practices.</p>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="../assenst/image-1.png" alt="User Auth System" class="project-img">
+        <div class="project-content">
+          <h3>User Authentication System</h3>
+          <p>A complete authentication system with registration, login, OTP verification, and password reset functionality. Implemented with Flask, JWT, and MySQL with security best practices.</p>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- More Projects Button -->
+ 
+  </section>
+
+</body>
+</html>

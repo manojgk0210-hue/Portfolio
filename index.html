@@ -110,7 +110,7 @@
     
     .section-title {
       font-size: 2.5rem;
-      margin-bottom: 50px;
+      margin-bottom: 10px;
       text-align: center;
       color: var(--primary);
       position: relative;
@@ -119,16 +119,16 @@
       margin-right: auto;
     }
     
-    .section-title::after {
+    /* .section-title::after {
       content: '';
       position: absolute;
-      width: 60px;
+      width: 10px;
       height: 3px;
       background: var(--primary);
       bottom: -10px;
       left: 50%;
       transform: translateX(-50%);
-    }
+    } */
     
     /* Hero Section */
     .hero {
@@ -312,8 +312,8 @@
     
     .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
       margin-top: 0px;
     }
     
@@ -770,6 +770,36 @@
     gap: 15px;
   }
 }
+/* Remove underline from all skill links */
+.skill-item {
+  text-decoration: none;
+}
+
+/* Skill list as flex 3 columns */
+.skill-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Each column */
+.skill-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1; /* Equal width for 3 columns */
+  min-width: 180px;
+}
+
+/* Adjust skill-item hover effect */
+.skill-item:hover {
+  background: var(--primary);
+  color: var(--light);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 173, 181, 0.3);
+}
+
   </style>
 </head>
 <body>
@@ -780,8 +810,11 @@
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#Certificates">Certificates</a>
       <a href="#contact">Contact</a>
-      <a href="./assenst/manojgkResume.pdf" target="_blank" class="btn-resume">Resume</a>
+<a href="./assenst/Manoj-G-K-Resume.pdf" target="_blank" class="btn-resume">
+  Resume
+</a>
     </nav>
   </header>
 
@@ -840,106 +873,208 @@
   <section class="skills" id="skills">
   <h2 class="section-title">My Skills</h2>
   <div class="skills-container">
-    <div class="skills-categories" style="margin-top: 0px";
-">
+    <div class="skills-categories">
       <div class="skill-category animate-fade delay-1">
         <h3>DevOps & Cloud</h3>
         <div class="skill-list">
-  <!-- Left Column -->
-  <div class="skill-column">
-    <div class="skill-item">
-      <i class="fab fa-python"></i> Python
-    </div>
-    <div class="skill-item">
-      <i class="fab fa-python"></i> Linux
-    </div>
-    <div class="skill-item">
-      <i class="fab fa-docker"></i> Docker
-    </div>
-    <div class="skill-item">
-      <i class="fas fa-ship"></i> Kubernetes
-    </div>
-   
-  </div>
-  <div class="skill-column">
-     <div class="skill-item">
-      <i class="fab fa-aws"></i> AWS
-    </div>
-    <div class="skill-item">
-      <i class="fas fa-server"></i>Jenkines
-    </div>
-    <div class="skill-item">
-      <i class="fas fa-robot"></i> CI/CD
-    </div>
-    <div class="skill-item">
-      <i class="fas fa-robot"></i> Terraform 
-    </div>
-  
-  </div>
-  
-  <!-- Right Column -->
-  <div class="skill-column">
-   
-    <div class="skill-item">
-      <i class="fas fa-sync-alt"></i> ansible
-    </div>
-    <div class="skill-item">
-      <i class="fas fa-flask"></i> Flask
-    </div>
-    <div class="skill-item">
-      <i class="fas fa-database"></i> Data Base
-    </div>
-    <div class="skill-item">
-      <i class="fas fa-database"></i> Mechine Learning
-    </div>
-  </div>
-</div>
+          <!-- Column 1 -->
+          <div class="skill-column">
+            <a href="./Skills/AWS.html" class="skill-item"><i class="fab fa-aws"></i> AWS Cloud</a>
+            <a href="./Skills/Docker.html" class="skill-item"><i class="fab fa-docker"></i> Docker</a>
+            <a href="./Skills/CI-CD.html" class="skill-item"><i class="fas fa-sync-alt"></i> CI/CD</a>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="skill-column">
+            <a href="./Skills/Kubernetes.html" class="skill-item"><i class="fas fa-server"></i> Kubernetes</a>
+            <a href="./Skills/Terraform.html" class="skill-item"><i class="fas fa-cogs"></i> Terraform</a>
+            <a href="./Skills/Ansible.html" class="skill-item"><i class="fas fa-network-wired"></i> Ansible</a>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="skill-column">
+            
+            <a href="./Skills/Linux.html" class="skill-item"><i class="fab fa-linux"></i> Linux</a>
+            <a href="./Skills/Git-git hub.html" class="skill-item"><i class="fab fa-git-alt"></i> Git & GitHub</a>
+            <a href="./Skills/Progreming Lanagers.html" class="skill-item"><i class="fas fa-code"></i> Programming Languages</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-  <!-- Projects Section -->
-  <section class="projects" id="projects">
-    <h2 class="section-title">My Projects</h2>
-    <div class="project-grid">
-      <div class="project-card animate-fade delay-1">
-        <img src="./assenst/Screenshot 2025-06-12 204443.png" alt="E-Waste Recycling App" class="project-img">
-        <div class="project-content">
-          <h3>E-Waste Recycling App</h3>
-          <p>A comprehensive platform to manage and promote e-waste recycling with location tracking, user dashboard, and reward system. Built with Flask, MySQL, and integrated Google Maps API.</p>
-          <div class="project-links">
-            <a href="https://manojgk.shop/" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-            <a href="https://github.com/ManojGK-2002/manojgk-shop" class="project-link"><i class="fab fa-github"></i> Code</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="project-card animate-fade delay-2">
-        <img src="./assenst/ChatGPT Image Sep 5, 2025, 09_48_50 PM.png" alt="Password Generator" class="project-img">
-        <div class="project-content">
-          <h3>AWS VPC Tutorial | Public & Private Subnets, ALB, NAT, Auto Scaling</h3>
-          <p></p>
-          <div class="project-links">
-            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="project-card animate-fade delay-3">
-        <img src="https://via.placeholder.com/600x400?text=Auth+System" alt="User Auth System" class="project-img">
-        <div class="project-content">
-          <h3>User Authentication System</h3>
-          <p>A complete authentication system with registration, login, OTP verification, and password reset functionality. Implemented with Flask, JWT, and MySQL with security best practices.</p>
-          <div class="project-links">
-            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-          </div>
+
+<!-- Projects Section -->
+<section class="projects" id="projects">
+  <h2 class="section-title">My Projects</h2>
+  <div class="project-grid">
+    <div class="project-card animate-fade delay-1">
+      <img src="./assenst/Screenshot 2025-06-12 204443.png" alt="E-Waste Recycling App" class="project-img">
+      <div class="project-content">
+        <h3>E-Waste Recycling App</h3>
+        <p>A comprehensive platform to manage and promote e-waste recycling with location tracking, user dashboard, and reward system. Built with Flask, MySQL, and integrated Google Maps API.</p>
+        <div class="project-links">
+          <a href="https://manojgk.shop/" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="https://github.com/ManojGK-2002/manojgk-shop" class="project-link"><i class="fab fa-github"></i> Code</a>
         </div>
       </div>
     </div>
-  </section>
+    
+    <div class="project-card animate-fade delay-2">
+      <img src="./assenst/ChatGPT Image Sep 5, 2025, 09_48_50 PM.png" alt="Password Generator" class="project-img">
+      <div class="project-content">
+        <h3>AWS VPC Tutorial | Public & Private Subnets, ALB, NAT, Auto Scaling</h3>
+        <p></p>
+        <div class="project-links">
+          <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="project-card animate-fade delay-3">
+      <img src="assenst/Three-Tier.gif" alt="User Auth System" class="project-img">
+      <div class="project-content">
+        <h3>User Authentication System</h3>
+        <p>A complete authentication system with registration, login, OTP verification, and password reset functionality. Implemented with Flask, JWT, and MySQL with security best practices.</p>
+        <div class="project-links">
+          <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- More Projects Button -->
+  <div style="text-align: center; margin-top: 0px;">
+    <a href="./projects/projects.html" class="btn">More Projects</a>
+  </div>
+</section>
+
+<section class="Certificates" id="Certificates">
+  <h2 class="section-title"><i class="fas fa-award"></i> My Certificates</h2>
+<p>  <br></p>
+  <div class="certificates-grid">
+    <div class="certificate-card">
+      <div class="certificate-content">
+        <h3 class="certificate-name">AWS Cloud Practitioner</h3>
+        <span class="certificate-org">Amazon Web Services</span>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <div class="certificate-content">
+        <h3 class="certificate-name">Cisco Networking</h3>
+        <span class="certificate-org">Cisco</span>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <div class="certificate-content">
+        <h3 class="certificate-name">DAS in C (Data Structures & Algorithms)</h3>
+        <span class="certificate-org">NPTEL / Your Institute</span>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <div class="certificate-content">
+        <h3 class="certificate-name">DBMS Advanced</h3>
+        <span class="certificate-org">Your Institute / Platform</span>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <div class="certificate-content">
+        <h3 class="certificate-name">Java Programming Certificate</h3>
+        <span class="certificate-org">Your Institute / Platform</span>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <div class="certificate-content">
+        <h3 class="certificate-name">Machine Learning with Python</h3>
+        <span class="certificate-org">Your Institute / Platform</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="./cert/Certificates.html" class="btn"> More Certificates</a>
+  </div>
+</section>
+
+<style>
+  /* Certificates Section Styles */
+  .certificates {
+    padding: 50px 20px;
+    /* background: #f8f9fa; */
+  }
+
+  .certificates .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #3498db;
+  }
+
+  .certificates .subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+  }
+
+  .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .certificate-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  }
+
+  .certificate-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+  }
+
+  .certificate-org {
+    font-size: 0.95rem;
+    color: #3498db;
+    font-style: italic;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.2s;
+  }
+
+  .btn:hover {
+    background: #2c80b4;
+    transform: translateY(-2px);
+  }
+</style>
 
   <!-- Contact Section -->
 <!-- Contact Section -->
