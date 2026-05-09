@@ -1,28 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Linux Skills</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linux Skills | Manoj G K</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./skill-page.css">
 </head>
 <body>
+  <main class="page-shell">
+    <nav class="top-bar">
+      <a class="brand" href="../index.html#skills">Manoj G K</a>
+      <a class="back-link" href="../index.html#skills"><i class="fas fa-arrow-left"></i> Back to Skills</a>
+    </nav>
 
-<h1>Linux Knowledge</h1>
+    <section class="hero">
+      <div class="hero-card">
+        <div class="skill-icon"><i class="fab fa-linux"></i></div>
+        <p class="eyebrow">System Administration</p>
+        <h1>Linux</h1>
+        <p class="lead">I am comfortable working with Linux systems, terminal commands, permissions, services, and the server basics needed for DevOps work.</p>
+        <div class="tag-row">
+          <span class="tag">CLI</span>
+          <span class="tag">Permissions</span>
+          <span class="tag">Services</span>
+          <span class="tag">Processes</span>
+          <span class="tag">Shell</span>
+        </div>
+      </div>
+      <aside class="score-card">
+        <p class="score-label">Current Confidence</p>
+        <p class="score-value">5/5</p>
+        <div class="rating" aria-label="5 out of 5 stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <div class="meter" style="--level: 100%"><span></span></div>
+      </aside>
+    </section>
 
-<p>
-I am comfortable working with Linux systems and command-line tools.
-</p>
+    <section class="content-grid">
+      <article class="content-card">
+        <h2>What I Work With</h2>
+        <ul class="skill-list">
+          <li><i class="fas fa-check-circle"></i> Navigating files and directories from the command line.</li>
+          <li><i class="fas fa-check-circle"></i> Managing users, groups, file permissions, and ownership.</li>
+          <li><i class="fas fa-check-circle"></i> Working with processes, system services, and logs.</li>
+          <li><i class="fas fa-check-circle"></i> Installing packages and configuring basic server tools.</li>
+          <li><i class="fas fa-check-circle"></i> Writing simple shell scripts for automation tasks.</li>
+        </ul>
+      </article>
 
-<h2>What I Know About Linux</h2>
-<ul>
-    <li>Basic Linux commands</li>
-    <li>File and directory management</li>
-    <li>User and permission management</li>
-    <li>Process and service management</li>
-    <li>Shell scripting basics</li>
-</ul>
+      <article class="content-card">
+        <h2>Practical Strengths</h2>
+        <ul class="skill-list">
+          <li><i class="fas fa-terminal"></i> Debugging common command-line and server issues.</li>
+          <li><i class="fas fa-file-alt"></i> Reading logs to understand application and service failures.</li>
+          <li><i class="fas fa-lock"></i> Applying basic permission and access-control practices.</li>
+          <li><i class="fas fa-server"></i> Preparing Linux servers for cloud and DevOps workloads.</li>
+        </ul>
+      </article>
 
-<h2>Self Rating</h2>
-<p>⭐⭐⭐⭐⭐ (5/5)</p>
-
+      <article class="content-card wide">
+        <h2>Where I Use It</h2>
+        <div class="highlight-grid">
+          <div class="highlight"><strong>Cloud Servers</strong><span>Managing EC2 and Linux-based deployment environments.</span></div>
+          <div class="highlight"><strong>Automation</strong><span>Writing scripts for repeated operational tasks.</span></div>
+          <div class="highlight"><strong>Troubleshooting</strong><span>Checking logs, ports, processes, and service status.</span></div>
+        </div>
+      </article>
+    </section>
+    <p class="footer-note">Designed as part of Manoj G K's portfolio skill pages.</p>
+  </main>
+  <script src="./skill-page.js"></script>
 </body>
 </html>

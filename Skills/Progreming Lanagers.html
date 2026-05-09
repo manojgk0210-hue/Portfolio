@@ -1,26 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Programming Skills</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Skills | Manoj G K</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./skill-page.css">
 </head>
 <body>
+  <main class="page-shell">
+    <nav class="top-bar">
+      <a class="brand" href="../index.html#skills">Manoj G K</a>
+      <a class="back-link" href="../index.html#skills"><i class="fas fa-arrow-left"></i> Back to Skills</a>
+    </nav>
 
-<h1>Programming Knowledge</h1>
+    <section class="hero">
+      <div class="hero-card">
+        <div class="skill-icon"><i class="fas fa-code"></i></div>
+        <p class="eyebrow">Development Fundamentals</p>
+        <h1>Programming Languages</h1>
+        <p class="lead">I use programming fundamentals to build applications, automate tasks, work with data, and support DevOps workflows.</p>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">Shell</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">YAML</span>
+        </div>
+      </div>
+      <aside class="score-card">
+        <p class="score-label">Current Confidence</p>
+        <p class="score-value">5/5</p>
+        <div class="rating" aria-label="5 out of 5 stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <div class="meter" style="--level: 100%"><span></span></div>
+      </aside>
+    </section>
 
-<p>
-I have basic programming knowledge and use it for automation and DevOps tasks.
-</p>
+    <section class="content-grid">
+      <article class="content-card">
+        <h2>What I Work With</h2>
+        <ul class="skill-list">
+          <li><i class="fas fa-check-circle"></i> Python basics for scripts, Flask projects, and data work.</li>
+          <li><i class="fas fa-check-circle"></i> Shell scripting for Linux and automation tasks.</li>
+          <li><i class="fas fa-check-circle"></i> HTML, CSS, and JavaScript for portfolio and web interfaces.</li>
+          <li><i class="fas fa-check-circle"></i> YAML and JSON for DevOps configuration files.</li>
+          <li><i class="fas fa-check-circle"></i> Debugging syntax, logic, and runtime issues in project code.</li>
+        </ul>
+      </article>
 
-<h2>Programming Languages</h2>
-<ul>
-    <li>Shell scripting</li>
-    <li>Basic Python</li>
-    <li>YAML & JSON</li>
-</ul>
+      <article class="content-card">
+        <h2>Practical Strengths</h2>
+        <ul class="skill-list">
+          <li><i class="fas fa-brain"></i> Breaking problems into smaller, solvable steps.</li>
+          <li><i class="fas fa-terminal"></i> Writing scripts that save time in repeated tasks.</li>
+          <li><i class="fas fa-window-maximize"></i> Building simple, usable web pages and interfaces.</li>
+          <li><i class="fas fa-bug"></i> Troubleshooting errors with logs, tests, and careful reading.</li>
+        </ul>
+      </article>
 
-<h2>Self Rating</h2>
-<p>⭐⭐⭐⭐⭐ (5/5)</p>
-
+      <article class="content-card wide">
+        <h2>Where I Use It</h2>
+        <div class="highlight-grid">
+          <div class="highlight"><strong>Web Projects</strong><span>Building portfolio pages, Flask apps, and UI sections.</span></div>
+          <div class="highlight"><strong>Automation</strong><span>Creating scripts that support DevOps workflows.</span></div>
+          <div class="highlight"><strong>Data Work</strong><span>Preparing logic for data science and machine learning projects.</span></div>
+        </div>
+      </article>
+    </section>
+    <p class="footer-note">Designed as part of Manoj G K's portfolio skill pages.</p>
+  </main>
+  <script src="./skill-page.js"></script>
 </body>
 </html>

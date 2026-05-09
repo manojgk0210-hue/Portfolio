@@ -1,60 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Docker Skills</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker Skills | Manoj G K</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./skill-page.css">
 </head>
 <body>
+  <main class="page-shell">
+    <nav class="top-bar">
+      <a class="brand" href="../index.html#skills">Manoj G K</a>
+      <a class="back-link" href="../index.html#skills"><i class="fas fa-arrow-left"></i> Back to Skills</a>
+    </nav>
 
-    <h1>My Docker Knowledge</h1>
+    <section class="hero">
+      <div class="hero-card">
+        <div class="skill-icon"><i class="fab fa-docker"></i></div>
+        <p class="eyebrow">Containerization</p>
+        <h1>Docker</h1>
+        <p class="lead">I use Docker to package applications with their dependencies so they can run consistently across development, testing, and production environments.</p>
+        <div class="tag-row">
+          <span class="tag">Images</span>
+          <span class="tag">Containers</span>
+          <span class="tag">Dockerfile</span>
+          <span class="tag">Volumes</span>
+          <span class="tag">Networking</span>
+        </div>
+      </div>
+      <aside class="score-card">
+        <p class="score-label">Current Confidence</p>
+        <p class="score-value">5/5</p>
+        <div class="rating" aria-label="5 out of 5 stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <div class="meter" style="--level: 100%"><span></span></div>
+      </aside>
+    </section>
 
-    <p>
-        I have hands-on knowledge of Docker and containerization concepts.
-        Docker helps me create consistent, portable, and scalable applications
-        across different environments.
-    </p>
+    <section class="content-grid">
+      <article class="content-card">
+        <h2>What I Work With</h2>
+        <ul class="skill-list">
+          <li><i class="fas fa-check-circle"></i> Building and running Docker images and containers.</li>
+          <li><i class="fas fa-check-circle"></i> Writing Dockerfiles for Python and web applications.</li>
+          <li><i class="fas fa-check-circle"></i> Managing container ports, environment variables, and volumes.</li>
+          <li><i class="fas fa-check-circle"></i> Using Docker Hub and image repositories.</li>
+          <li><i class="fas fa-check-circle"></i> Applying Docker in CI/CD pipeline stages.</li>
+        </ul>
+      </article>
 
-    <h2>What I Know About Docker</h2>
+      <article class="content-card">
+        <h2>Practical Strengths</h2>
+        <ul class="skill-list">
+          <li><i class="fas fa-box"></i> Creating repeatable development environments.</li>
+          <li><i class="fas fa-code-branch"></i> Understanding image layers and container lifecycle.</li>
+          <li><i class="fas fa-plug"></i> Mapping ports and connecting containers during local testing.</li>
+          <li><i class="fas fa-broom"></i> Cleaning unused images, containers, and volumes safely.</li>
+        </ul>
+      </article>
 
-    <ul>
-        <li>Docker fundamentals and architecture</li>
-        <li>Docker images and containers</li>
-        <li>Writing and optimizing Dockerfiles</li>
-        <li>Building, running, and managing containers</li>
-        <li>Common Docker CLI commands</li>
-        <li>Docker Hub and image repositories</li>
-        <li>Port mapping and volume mounting</li>
-        <li>Container lifecycle management</li>
-        <li>Basic Docker networking</li>
-        <li>Using Docker in CI/CD pipelines</li>
-    </ul>
-
-        <h2>Self Rating</h2>
-
-    <p>⭐⭐⭐⭐⭐ (5/5)</p>
-
-    
-    <h2>Docker Demo Video</h2>
-
-  <p>Watch my Docker video on YouTube:</p>
-
-<iframe 
-    width="560" 
-    height="315"
-    src="https://www.youtube.com/embed/IyVmunYxYLw"
-    title="Docker YouTube Video"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-</iframe>
-
-<p>
-    <a href="https://youtu.be/IyVmunYxYLw?si=00kxWVOwQONJMXYM" target="_blank">
-        Watch directly on YouTube
-    </a>
-</p>
-
-
-
+      <article class="content-card wide">
+        <h2>Docker Demo Video</h2>
+        <iframe class="video-frame" src="https://www.youtube.com/embed/IyVmunYxYLw" title="Docker Demo Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p class="lead"><a class="primary-link" href="https://youtu.be/IyVmunYxYLw?si=00kxWVOwQONJMXYM" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> Watch on YouTube</a></p>
+      </article>
+    </section>
+    <p class="footer-note">Designed as part of Manoj G K's portfolio skill pages.</p>
+  </main>
+  <script src="./skill-page.js"></script>
 </body>
 </html>

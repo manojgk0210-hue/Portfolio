@@ -1,28 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Terraform Skills</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terraform Skills | Manoj G K</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./skill-page.css">
 </head>
 <body>
+  <main class="page-shell">
+    <nav class="top-bar">
+      <a class="brand" href="../index.html#skills">Manoj G K</a>
+      <a class="back-link" href="../index.html#skills"><i class="fas fa-arrow-left"></i> Back to Skills</a>
+    </nav>
 
-<h1>Terraform Knowledge</h1>
+    <section class="hero">
+      <div class="hero-card">
+        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+        <p class="eyebrow">Infrastructure as Code</p>
+        <h1>Terraform</h1>
+        <p class="lead">I use Terraform to define cloud infrastructure in code, making infrastructure easier to version, review, reuse, and automate.</p>
+        <div class="tag-row">
+          <span class="tag">Providers</span>
+          <span class="tag">Resources</span>
+          <span class="tag">Variables</span>
+          <span class="tag">State</span>
+          <span class="tag">AWS</span>
+        </div>
+      </div>
+      <aside class="score-card">
+        <p class="score-label">Current Confidence</p>
+        <p class="score-value">5/5</p>
+        <div class="rating" aria-label="5 out of 5 stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <div class="meter" style="--level: 100%"><span></span></div>
+      </aside>
+    </section>
 
-<p>
-I use Terraform for Infrastructure as Code to automate and manage cloud resources.
-</p>
+    <section class="content-grid">
+      <article class="content-card">
+        <h2>What I Work With</h2>
+        <ul class="skill-list">
+          <li><i class="fas fa-check-circle"></i> Writing Terraform configuration for AWS infrastructure.</li>
+          <li><i class="fas fa-check-circle"></i> Using providers, resources, variables, and outputs.</li>
+          <li><i class="fas fa-check-circle"></i> Understanding plan, apply, destroy, and state workflow.</li>
+          <li><i class="fas fa-check-circle"></i> Creating reusable patterns for VPC, EC2, and security groups.</li>
+          <li><i class="fas fa-check-circle"></i> Reading Terraform errors and correcting configuration issues.</li>
+        </ul>
+      </article>
 
-<h2>What I Know About Terraform</h2>
-<ul>
-    <li>Terraform basics and workflow</li>
-    <li>Providers and resources</li>
-    <li>Variables and outputs</li>
-    <li>State files</li>
-    <li>Creating AWS infrastructure using Terraform</li>
-</ul>
+      <article class="content-card">
+        <h2>Practical Strengths</h2>
+        <ul class="skill-list">
+          <li><i class="fas fa-code"></i> Treating infrastructure changes like application code.</li>
+          <li><i class="fas fa-eye"></i> Reviewing planned changes before applying them.</li>
+          <li><i class="fas fa-shield-alt"></i> Keeping cloud resources structured and repeatable.</li>
+          <li><i class="fas fa-cloud"></i> Connecting Terraform workflows with AWS cloud services.</li>
+        </ul>
+      </article>
 
-<h2>Self Rating</h2>
-<p>⭐⭐⭐⭐⭐ (5/5)</p>
-
+      <article class="content-card wide">
+        <h2>Where I Use It</h2>
+        <div class="highlight-grid">
+          <div class="highlight"><strong>AWS Labs</strong><span>Building repeatable cloud infrastructure for projects.</span></div>
+          <div class="highlight"><strong>DevOps Flow</strong><span>Preparing infrastructure before application deployment.</span></div>
+          <div class="highlight"><strong>Version Control</strong><span>Tracking infrastructure changes with Git.</span></div>
+        </div>
+      </article>
+    </section>
+    <p class="footer-note">Designed as part of Manoj G K's portfolio skill pages.</p>
+  </main>
+  <script src="./skill-page.js"></script>
 </body>
 </html>
