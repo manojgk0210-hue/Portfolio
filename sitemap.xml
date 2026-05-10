@@ -4,12 +4,53 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+<url>
+  <loc>https://portfolio.manojgk.in/</loc>
+  <lastmod>2026-05-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
+</url>
 
 <url>
-  <loc>https://portfolio.manojgk.shop/</loc>
-  <lastmod>2025-06-12T11:18:04+00:00</lastmod>
+  <loc>https://portfolio.manojgk.in/projects/projects.html</loc>
+  <lastmod>2026-05-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://portfolio.manojgk.in/cert/Certificates.html</loc>
+  <lastmod>2026-05-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://portfolio.manojgk.in/Skills/AWS.html</loc>
+  <lastmod>2026-05-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://portfolio.manojgk.in/Skills/Docker.html</loc>
+  <lastmod>2026-05-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://portfolio.manojgk.in/Skills/Kubernetes.html</loc>
+  <lastmod>2026-05-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://portfolio.manojgk.in/Skills/Terraform.html</loc>
+  <lastmod>2026-05-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
 </url>
 
 
