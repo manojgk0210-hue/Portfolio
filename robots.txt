@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio.manojgk.in/sitemap.xml
+Sitemap: https://manojgk0210-hue.github.io/sitemap.xml

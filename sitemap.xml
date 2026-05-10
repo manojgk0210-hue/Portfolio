@@ -5,49 +5,49 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://portfolio.manojgk.in/</loc>
+  <loc>https://manojgk0210-hue.github.io/</loc>
   <lastmod>2026-05-10</lastmod>
   <changefreq>monthly</changefreq>
   <priority>1.0</priority>
 </url>
 
 <url>
-  <loc>https://portfolio.manojgk.in/projects/projects.html</loc>
+  <loc>https://manojgk0210-hue.github.io/projects/projects.html</loc>
   <lastmod>2026-05-10</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 
 <url>
-  <loc>https://portfolio.manojgk.in/cert/Certificates.html</loc>
+  <loc>https://manojgk0210-hue.github.io/cert/Certificates.html</loc>
   <lastmod>2026-05-10</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
 </url>
 
 <url>
-  <loc>https://portfolio.manojgk.in/Skills/AWS.html</loc>
+  <loc>https://manojgk0210-hue.github.io/Skills/AWS.html</loc>
   <lastmod>2026-05-10</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
 
 <url>
-  <loc>https://portfolio.manojgk.in/Skills/Docker.html</loc>
+  <loc>https://manojgk0210-hue.github.io/Skills/Docker.html</loc>
   <lastmod>2026-05-10</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
 
 <url>
-  <loc>https://portfolio.manojgk.in/Skills/Kubernetes.html</loc>
+  <loc>https://manojgk0210-hue.github.io/Skills/Kubernetes.html</loc>
   <lastmod>2026-05-10</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
 
 <url>
-  <loc>https://portfolio.manojgk.in/Skills/Terraform.html</loc>
+  <loc>https://manojgk0210-hue.github.io/Skills/Terraform.html</loc>
   <lastmod>2026-05-10</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
