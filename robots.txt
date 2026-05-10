@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://manojgk0210-hue.github.io/sitemap.xml
