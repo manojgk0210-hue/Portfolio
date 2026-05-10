@@ -38,8 +38,44 @@
 
     nav a:hover { color: #00adb5; }
 
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 24px 5% 10px;
+    }
+
+    .brand {
+      color: #00adb5;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      border: 1px solid rgba(0, 173, 181, 0.35);
+      border-radius: 8px;
+      padding: 10px 16px;
+      background: rgba(0, 173, 181, 0.1);
+      color: #eee;
+      font-weight: 600;
+      transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+    }
+
+    .back-btn:hover {
+      transform: translateY(-2px);
+      border-color: #00adb5;
+      background: rgba(0, 173, 181, 0.18);
+      color: #fff;
+    }
+
     section {
-      padding: 00px 5%;
+      padding: 0 5%;
       min-height: 100vh;
     }
 
@@ -155,13 +191,22 @@
 
 @media(max-width:768px) {
   .project-grid { grid-template-columns: 1fr; }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 18px;
+  }
 }
 
   </style>
 </head>
 <body>
 
-  <!-- Header -->
+  <nav class="topbar">
+    <a class="brand" href="../index.html">Manoj G K</a>
+    <a class="back-btn" href="../index.html#projects"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+  </nav>
 
   <!-- Projects Section -->
   <section class="projects" id="projects">
